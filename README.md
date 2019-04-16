@@ -1,5 +1,4 @@
 Contributors:
-
 Nikita Gerard			ngerard@purdue.edu
 Lakshmi Galla			lgalla@purdue.edu
 Prarintita Ratanavarinchai	pratanav@purdue.edu
