@@ -1,3 +1,8 @@
+Contributors:
+Nikita Gerard			ngerard@purdue.edu
+Lakshmi Galla			lgalla@purdue.edu
+Prarintita Ratanavarinchai	pratanav@purdue.edu
+
 This project was developed during Xtern Bootcamp 2018 Session 2 held at Marian University and taught by Davey Strus and Dana Palazzo from Fretless.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
