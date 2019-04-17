@@ -18,6 +18,8 @@ import Rebase from 're-base'
   export const googleProvider = new firebase.auth.GoogleAuthProvider()
   export const gitProvider = new firebase.auth.GithubAuthProvider()
   export const fbProvider = new firebase.auth.FacebookAuthProvider()
+  export const twitterProvider = new firebase.auth.TwitterAuthProvider()
+  
   export const auth = firebase.auth()
 
   const db = app.database()
