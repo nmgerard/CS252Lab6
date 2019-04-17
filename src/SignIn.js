@@ -70,12 +70,22 @@ class SignIn extends Component {
               <i className = {`fab fa-facebook ${css(styles.brandIcon)}`}></i>
               Sign in with Facebook
             </button>
+
+            <button 
+              type = "button" 
+              className={css(styles.twitterButton)} 
+              onClick = {this.authenticateTwitter}
+            >
+              <i className = {`fab fa-twitter ${css(styles.brandIcon)}`}></i>
+              Sign in with Twitter
+            </button>
+
           </form>
 
-          <div className="blurb">
-            <h2 className={css(styles.h2)}>You're in good company.</h2>
+         {/* <div className="blurb"> */}
+          {/*  <h2 className={css(styles.h2)}>You're in good company.</h2> */}
             {/* <p>Ones of people are already using Chatarang!</p> */}
-          </div>
+         {/* </div> */}
         </main>
       </div>
     )
@@ -153,7 +163,7 @@ const styles = StyleSheet.create({
     padding: '1rem 2rem',
     fontSize: '1.2rem',
     borderRadius: '1rem',
-    backgroundColor: '#db3236',
+    backgroundColor: '#EA4335',
     color: 'white',
     width: '20rem',
     marginTop: '1rem',
@@ -183,7 +193,22 @@ const styles = StyleSheet.create({
     padding: '1rem 2rem',
     fontSize: '1.2rem',
     borderRadius: '1rem',
-    backgroundColor: '#253687',
+    backgroundColor: 'rgb(59, 89, 152)',
+    color: 'white',
+    width: '20rem',
+    marginTop: '1rem',
+    marginBottom: "1rem",
+    ':hover': {
+      cursor: 'pointer'
+    }
+  },
+  twitterButton: {
+    display: 'block',
+    margin: '0 auto',
+    padding: '1rem 2rem',
+    fontSize: '1.2rem',
+    borderRadius: '1rem',
+    backgroundColor: 'rgb(29, 161, 242)',
     color: 'white',
     width: '20rem',
     marginTop: '1rem',
