@@ -1,7 +1,8 @@
 Contributors:
+
 Nikita Gerard			ngerard@purdue.edu
 Lakshmi Galla			lgalla@purdue.edu
-Prarintita Ratanavarinchai	pratanav@purdue.edu
+Prarintita (Ada) Ratanavarinchai	pratanav@purdue.edu
 
 Goals:
 
