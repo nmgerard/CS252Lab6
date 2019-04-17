@@ -37,7 +37,7 @@ class SignIn extends Component {
         <header className={css(styles.header)}>
           <span className={css(styles.title)}>
             <i className="fas fa-hashtag"></i>
-            Chatarang
+            WeTalk
           </span>
         </header>
         <main className={css(styles.main)}>
@@ -45,7 +45,7 @@ class SignIn extends Component {
             className={css(styles.form)}
             onSubmit={this.handleSubmit}
           >
-            <h1>Welcome!</h1>
+            <h1>Welcome! Let's talk.</h1>
             <button 
               type = "button" 
               className={css(styles.googleButton)} 
