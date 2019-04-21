@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, css } from 'aphrodite'
 
-import {auth, googleProvider, gitProvider, fbProvider} from './base'
+import {auth, googleProvider, gitProvider, fbProvider, twitterProvider} from './base'
 
 class SignIn extends Component {
   state = {
@@ -29,6 +29,11 @@ class SignIn extends Component {
   authenticateFb = () => {
     auth
       .signInWithPopup(fbProvider)
+  }
+
+  autheticateTwit = () => {
+    auth
+      .signInWithPopup(twitterProvider)
   }
 
   render() {
