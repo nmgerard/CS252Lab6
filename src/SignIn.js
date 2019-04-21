@@ -31,7 +31,7 @@ class SignIn extends Component {
       .signInWithPopup(fbProvider)
   }
 
-  autheticateTwit = () => {
+  authenticateTwitter = () => {
     auth
       .signInWithPopup(twitterProvider)
   }
