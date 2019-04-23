@@ -57,7 +57,7 @@ class RoomForm extends Component {
     return (
       <div className={`RoomForm ${css(styles.roomForm)}`}>
         <main className={css(styles.main)}>
-          <h2 className={css(styles.title)}>Create a room</h2>
+          <h2 className={css(styles.title)}><b>CREATE A ROOM</b></h2>
           <form
             className={css(styles.form)}
             onSubmit={this.handleSubmit}
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     height: '100vh',
     width: '100vw',
     // backgroundColor: '#f6f6f6',
-    backgroundImage: `url('https://images.unsplash.com/photo-1527100673774-cce25eafaf7f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77e25cda9693040656f2de75ef2c0637&auto=format&fit=crop&w=668&q=80')`,
+    backgroundImage: `url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: 'white',
+    color: 'DimGrey',
     fontWeight: 400,
     lineHeight: '80px',
     fontSize: '2rem',
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
   },
 
   form: {
-    backgroundColor: 'white',
+    backgroundColor: 'Gainsboro',
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     marginBottom: '2rem',
     padding: '0 2rem 2rem',
@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
     margin: '0 1rem',
     fontSize: '1.2rem',
     borderRadius: '1rem',
-    backgroundColor: '#253687',
+    backgroundColor: 'CornflowerBlue',
     color: 'white',
     width: '10rem',
     cursor: 'pointer',
