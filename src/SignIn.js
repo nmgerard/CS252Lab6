@@ -50,7 +50,7 @@ class SignIn extends Component {
             className={css(styles.form)}
             onSubmit={this.handleSubmit}
           >
-            <h1>Welcome! Let's talk.</h1>
+            <h1 className={css(styles.h1)}>Welcome! Let's talk.</h1>
             <button 
               type = "button" 
               className={css(styles.googleButton)} 
@@ -102,13 +102,13 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     height: '100vh',
     // backgroundColor: '#f6f6f6',
-    backgroundImage: `url('https://images.unsplash.com/photo-1495583237039-44cb1143f0b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77afd8d4aa023f6449f661f3cf3ce3d0&auto=format&fit=crop&w=2850&q=80')`,
+    backgroundImage: `url('https://images.unsplash.com/photo-1501619757722-90657a99803b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   },
   header: {
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     height: '4rem',
     padding: '0 2rem',
     margin: 0,
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
   },
   title: {
-    color: '#2CA3F3',
+    color: 'white',
     fontWeight: 400,
     textTransform: 'uppercase',
     lineHeight: '80px',
@@ -157,6 +157,9 @@ const styles = StyleSheet.create({
     ':focus': {
       outline: 0,
     },
+  },
+  h1: {
+    color: 'white'
   },
   h2: {
     fontWeight: 'normal',

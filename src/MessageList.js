@@ -38,7 +38,7 @@ class MessageList extends Component {
 const styles = {
     messageList: {
         // backgroundColor: "white",
-        backgroundImage: `url('https://images.unsplash.com/photo-1519229560282-5c6d4a11e474?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb6548e69b2812cd4008d56825cd94c9&auto=format&fit=crop&w=1649&q=80')`,
+        backgroundImage: `url('https://images.unsplash.com/photo-1472552944129-b035e9ea3744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80')`,
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

@@ -58,7 +58,7 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
 const styles = {
     sidebar: {
         //backgroundColor: "#4c3465",
-        backgroundImage: `url('https://images.unsplash.com/photo-1499260320506-8144c5c33ddf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=544e34eab2bbf0f864a6010191f8241d&auto=format&fit=crop&w=1624&q=80')`,
+        backgroundImage: `url('https://images.unsplash.com/photo-1517504734587-2890819debab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80')`,
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

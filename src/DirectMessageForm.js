@@ -57,7 +57,9 @@ class DirectMessageForm extends Component {
       <div className={`RoomForm ${css(styles.roomForm)}`}>
         <main className={css(styles.main)}>
           <h2 className={css(styles.title)}>
-            Direct Message
+            <b>
+              DIRECT MESSAGE
+            </b>
           </h2>
           <form
             className={css(styles.form)}
@@ -115,7 +117,7 @@ const styles = StyleSheet.create({
     height: '100vh',
     width: '100vw',
     // backgroundColor: '#f6f6f6',
-    backgroundImage: `url('https://images.unsplash.com/photo-1486546910464-ec8e45c4a137?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a2c308fe62dad65bdfd4b1efb8bc6bb8&auto=format&fit=crop&w=702&q=80')`,
+    backgroundImage: `url('https://images.unsplash.com/photo-1514897275838-55c3ed3ee738?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80')`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -123,7 +125,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: 'white',
+    color: 'DodgerBlue',
     fontWeight: 400,
     lineHeight: '80px',
     fontSize: '2rem',
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
   },
 
   form: {
-    backgroundColor: 'white',
+    backgroundColor: 'Lavender',
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     marginBottom: '2rem',
     padding: '2rem',
