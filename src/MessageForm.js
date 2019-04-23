@@ -35,9 +35,28 @@ class MessageForm extends Component {
           autoFocus
           className={css(styles.input)}
         />
+        
+        <input
+          type="file"
+          accept="image/*"
+          capture
+        />
+        {/* <img id="player" controls></img>
+        <script>
+          var recorder = document.getElementById('recorder');
+          player = document.getElementById('player');
+
+          recorder.addEventListener('change', function(e) {
+            var file = e.target.files[0];
+            // Do something with the audio file.
+            player.srcObject = file;
+          });
+        </script> */}
+
         <button type="submit" className={css(styles.button)}>
           <i className="far fa-paper-plane" title="Send"></i>
         </button>
+
       </form>
     )
   }
