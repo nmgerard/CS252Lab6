@@ -26,17 +26,11 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
                 ...styles.children,
                 ...styles.h1
             }}>
-                XTBC 18
             </h1>
             <nav 
                 className="RoomList"
                 style = {styles.children}
             >
-                {/* <h2>Rooms</h2>
-                <ul>
-                    <li><a href="#">general</a></li>
-                    <li><a href="#">random</a></li>
-                </ul> */}
                 <RoomList 
                     users = {users}
                     user = {user} 
@@ -58,7 +52,8 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
 const styles = {
     sidebar: {
         //backgroundColor: "#4c3465",
-        backgroundImage: `url('https://images.unsplash.com/photo-1517504734587-2890819debab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80')`,
+        //backgroundImage: `url('https://images.unsplash.com/photo-1517504734587-2890819debab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80')`,
+        backgroundImage: 'url(https://images.unsplash.com/photo-1501619757722-90657a99803b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

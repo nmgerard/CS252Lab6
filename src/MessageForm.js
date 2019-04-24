@@ -64,7 +64,8 @@ class MessageForm extends Component {
 
 const styles = StyleSheet.create({
   form: {
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
+    backgroundColor: 'rgba(250,250,250, 0.85)',
     height: '3rem',
     display: 'flex',
     alignItems: 'stretch',
@@ -80,7 +81,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     borderRadius: '0.5rem',
     alignItems: 'center',
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
+    backgroundColor: 'rgba(250,250,250, 0.85)',
     color: '#ccc',
     padding: '0 0.5rem',
     fontSize: '1.2rem',
@@ -90,7 +92,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: '1.2rem',
     border: 0,
-
+    backgroundColor: 'rgba(250,250,250, 0.85)',
     ':focus': {
       outline: 0,
     },

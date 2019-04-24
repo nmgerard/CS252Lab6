@@ -73,11 +73,12 @@ const styles = StyleSheet.create({
         marginTop: '1rem',
         padding: '1rem',
         position: 'relative',
-        color: "white",
+        //color: "white",
+        color: 'rgba(250,250,250, 0.85)',
         zIndex: 1,
 
         ':hover': {
-            backgroundColor: 'rgba(67, 111, 254, 0.3)',
+           backgroundColor: 'rgba(250,250,250, 0.1)',
         }
     },
 

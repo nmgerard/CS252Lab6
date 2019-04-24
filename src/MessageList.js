@@ -37,8 +37,10 @@ class MessageList extends Component {
 
 const styles = {
     messageList: {
+        //backgroundColor: 'rgb(44, 52, 77)',
+        backgroundColor: '#272F44',
         // backgroundColor: "white",
-        backgroundImage: `url('https://images.unsplash.com/photo-1472552944129-b035e9ea3744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80')`,
+   //     backgroundImage: `url('https://images.unsplash.com/photo-1472552944129-b035e9ea3744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80')`,
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -47,7 +49,8 @@ const styles = {
         overflowY: "scroll",
         roomAnnouncment: {
             padding: '2rem 1rem 10rem',
-            color: "white",
+            //color: "white",
+            color: 'rgba(250,250,250, 0.85)',
             h3: {
                 fontSize: "1.5rem",
 

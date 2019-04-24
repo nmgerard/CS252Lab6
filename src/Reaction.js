@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     padding: '0.125rem 0.25rem',
     marginRight: '0.25rem',
     marginBottom: '0.25rem',
-    color: '#999',
+    //color: '#999',
+    color: 'rgba(250, 250, 250, 0.6)',
     cursor: 'pointer',
 
     ':hover': {

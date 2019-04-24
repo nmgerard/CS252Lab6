@@ -41,7 +41,7 @@ class SignIn extends Component {
       <div className={`SignIn ${css(styles.signIn)}`}>
         <header className={css(styles.header)}>
           <span className={css(styles.title)}>
-            <i className="fas fa-hashtag"></i>
+           {/* <i className="fas fa-hashtag"></i>*/}
             WeTalk
           </span>
         </header>
@@ -51,38 +51,39 @@ class SignIn extends Component {
             onSubmit={this.handleSubmit}
           >
             <h1 className={css(styles.h1)}>Welcome! Let's talk.</h1>
+            <h2 className={css(styles.h2)}>Sign in with</h2>
             <button 
               type = "button" 
-              className={css(styles.googleButton)} 
+              className={css(styles.button, styles.googleButton)} 
               onClick = {this.authenticate}
             >
               <i className = {`fab fa-google ${css(styles.brandIcon)}`}></i>
-              Sign in with Google
+              Google
             </button>
             <button 
               type = "button" 
-              className={css(styles.githubButton)} 
+              className={css(styles.button, styles.githubButton)} 
               onClick = {this.authenticateGit}
             >
               <i className = {`fab fa-github ${css(styles.brandIcon)}`}></i>
-              Sign in with Github
+              Github
             </button>
             <button 
               type = "button" 
-              className={css(styles.fbButton)} 
+              className={css(styles.button, styles.fbButton)} 
               onClick = {this.authenticateFb}
             >
               <i className = {`fab fa-facebook ${css(styles.brandIcon)}`}></i>
-              Sign in with Facebook
+              Facebook
             </button>
 
             <button 
               type = "button" 
-              className={css(styles.twitterButton)} 
+              className={css(styles.button, styles.twitterButton)} 
               onClick = {this.authenticateTwitter}
             >
               <i className = {`fab fa-twitter ${css(styles.brandIcon)}`}></i>
-              Sign in with Twitter
+              Twitter
             </button>
 
           </form>
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
     backgroundSize: 'cover'
   },
   header: {
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
     height: '4rem',
     padding: '0 2rem',
     margin: 0,
@@ -117,7 +118,8 @@ const styles = StyleSheet.create({
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
   },
   title: {
-    color: 'white',
+    //color: 'white',
+    color: 'whitesmoke',
     fontWeight: 400,
     textTransform: 'uppercase',
     lineHeight: '80px',
@@ -133,11 +135,20 @@ const styles = StyleSheet.create({
     paddingBottom: '3rem',
   },
   form: {
-    width: '40rem',
+    //old form
+   // width: '40rem',
     // backgroundColor: '#CEE9FA',
     // boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     //marginBottom: '2rem',
-    paddingBottom: '1rem'
+  //  paddingBottom: '1rem'
+
+  //new form
+    width: '40rem',
+    height: '20rem',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    boxShadow: '0 1px 1px rgba(0,0,0,.1)',
+    marginBottom: '1.5rem',
+    color: 'whitesmoke',
   },
   label: {
     display: 'block',
@@ -148,7 +159,6 @@ const styles = StyleSheet.create({
     width: '20rem',
     fontSize: '1.5rem',
     border: 0,
-    backgroundColor: '#CEE9FA',
     borderBottom: '1px solid black',
     marginTop: '1rem',
     marginBottom: '1rem',
@@ -159,71 +169,104 @@ const styles = StyleSheet.create({
     },
   },
   h1: {
-    color: 'white'
+    color: 'whitesmoke'
   },
   h2: {
     fontWeight: 'normal',
-    color: 'white'
+    color: 'whitesmoke'
+  },
+  button: {
+    display: 'inline-block',
+
+    margin: '0 auto',
+    padding: '1rem 2rem',
+    fontSize: '1.2rem',
+    borderRadius: '1rem',
+    borderColor: 'whitesmoke',
+    backgroundColor: 'rgb(0, 0, 0, 0.8)',
+    color: 'white',
+    width: '15rem',
+    marginBottom: '1rem',
+    marginRight: '1rem',
+
+    transition: 'color 0.25s ease-out',
   },
   googleButton: {
-    display: 'block',
-    margin: '0 auto',
-    padding: '1rem 2rem',
-    fontSize: '1.2rem',
-    borderRadius: '1rem',
-    backgroundColor: '#EA4335',
-    color: 'white',
-    width: '20rem',
-    marginTop: '1rem',
-    marginBottom: "1rem",
+    // display: 'block',
+    // margin: '0 auto',
+    // padding: '1rem 2rem',
+    // fontSize: '1.2rem',
+    // borderRadius: '1rem',
+    // backgroundColor: '#EA4335',
+    // color: 'white',
+    // width: '20rem',
+    // marginTop: '1rem',
+    // marginBottom: "1rem",
+    // ':hover': {
+    //   cursor: 'pointer'
+    // }
     ':hover': {
-      cursor: 'pointer'
-    }
+      cursor: 'pointer',
+      backgroundColor: "#EA4335",
+    },
   },
+
   githubButton: {
-    display: 'block',
-    margin: '0 auto',
-    padding: '1rem 2rem',
-    fontSize: '1.2rem',
-    borderRadius: '1rem',
-    backgroundColor: 'black',
-    color: 'white',
-    width: '20rem',
-    marginTop: '1rem',
-    marginBottom: "1rem",
+    // display: 'block',
+    // margin: '0 auto',
+    // padding: '1rem 2rem',
+    // fontSize: '1.2rem',
+    // borderRadius: '1rem',
+    // backgroundColor: 'black',
+    // color: 'white',
+    // width: '20rem',
+    // marginTop: '1rem',
+    // marginBottom: "1rem",
+    // ':hover': {
+    //   cursor: 'pointer'
+    // }
     ':hover': {
-      cursor: 'pointer'
-    }
+      cursor: 'pointer',
+      backgroundColor: "rgb(0, 0, 0)",
+    },
   },
   fbButton: {
-    display: 'block',
-    margin: '0 auto',
-    padding: '1rem 2rem',
-    fontSize: '1.2rem',
-    borderRadius: '1rem',
-    backgroundColor: 'rgb(59, 89, 152)',
-    color: 'white',
-    width: '20rem',
-    marginTop: '1rem',
-    marginBottom: "1rem",
+    // display: 'block',
+    // margin: '0 auto',
+    // padding: '1rem 2rem',
+    // fontSize: '1.2rem',
+    // borderRadius: '1rem',
+    // backgroundColor: 'rgb(59, 89, 152)',
+    // color: 'white',
+    // width: '20rem',
+    // marginTop: '1rem',
+    // marginBottom: "1rem",
+    // ':hover': {
+    //   cursor: 'pointer'
+    // }
     ':hover': {
-      cursor: 'pointer'
-    }
+      cursor: 'pointer',
+      backgroundColor: "rgb(59, 89, 152)",
+    },
   },
   twitterButton: {
-    display: 'block',
-    margin: '0 auto',
-    padding: '1rem 2rem',
-    fontSize: '1.2rem',
-    borderRadius: '1rem',
-    backgroundColor: 'rgb(29, 161, 242)',
-    color: 'white',
-    width: '20rem',
-    marginTop: '1rem',
-    marginBottom: "1rem",
+    // display: 'block',
+    // margin: '0 auto',
+    // padding: '1rem 2rem',
+    // fontSize: '1.2rem',
+    // borderRadius: '1rem',
+    // backgroundColor: 'rgb(29, 161, 242)',
+    // color: 'white',
+    // width: '20rem',
+    // marginTop: '1rem',
+    // marginBottom: "1rem",
+    // ':hover': {
+    //   cursor: 'pointer'
+    // },
     ':hover': {
-      cursor: 'pointer'
-    }
+      cursor: 'pointer',
+      backgroundColor: "rgb(29, 161, 242)",
+    },
   },
   brandIcon: {
     marginRight: "1rem"
