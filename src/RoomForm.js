@@ -149,8 +149,7 @@ const styles = StyleSheet.create({
     left: 0,
     height: '100vh',
     width: '100vw',
-    // backgroundColor: '#f6f6f6',
-    //backgroundImage: `url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')`,
+    backgroundImage: `url('https://images.unsplash.com/photo-1505051508008-923feaf90180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')`,
     backgroundColor: '#272F44',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
@@ -159,7 +158,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: 'DimGrey',
+    color: 'white',
     fontWeight: 400,
     lineHeight: '80px',
     fontSize: '2rem',

@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   count: {
     marginLeft: '0.25rem',
     fontSize: '0.6rem',
+    color: 'black'
   },
 })
 
