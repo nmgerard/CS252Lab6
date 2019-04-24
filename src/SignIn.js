@@ -41,8 +41,9 @@ class SignIn extends Component {
       <div className={`SignIn ${css(styles.signIn)}`}>
         <header className={css(styles.header)}>
           <span className={css(styles.title)}>
-           {/* <i className="fas fa-hashtag"></i>*/}
-            WeTalk
+           {/* <i className="fas fa-hashtag"></i>
+            WeTalk*/}
+            <img src="/build/favicon.ico" alt=""></img>
           </span>
         </header>
         <main className={css(styles.main)}>
