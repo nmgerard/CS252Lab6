@@ -41,9 +41,9 @@ class SignIn extends Component {
       <div className={`SignIn ${css(styles.signIn)}`}>
         <header className={css(styles.header)}>
           <span className={css(styles.title)}>
-           {/* <i className="fas fa-hashtag"></i>
-            WeTalk*/}
-            <img src="/build/favicon.ico" alt=""></img>
+           {/* <i className="fas fa-hashtag"></i>*/}
+           {/*} WeTalk*/}
+           <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt=""></img>
           </span>
         </header>
         <main className={css(styles.main)}>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     //color: 'white',
     color: 'whitesmoke',
     fontWeight: 400,
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
     lineHeight: '80px',
     fontSize: '2rem',
   },
