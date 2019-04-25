@@ -24,8 +24,8 @@ class MessageForm extends Component {
         //bgColor: "#FF0000",
         count: 'noclick'
       })  
-      document.body.style.backgroundColor = "#FF0"
-    } else {
+      document.body.style.backgroundColor = "#FFFFFF"
+      } else {
       this.setState({
         //bgColor: "#7FF000",
         count: 'click'
