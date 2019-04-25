@@ -21,16 +21,14 @@ class MessageForm extends Component {
   boxClick = (e) => {
     if (this.state.count === 'click') {
       this.setState({
-        //bgColor: "#FF0000",
         count: 'noclick'
       })  
       document.body.style.backgroundColor = "#FFFFFF"
-      } else {
+    } else {
       this.setState({
-        //bgColor: "#7FF000",
         count: 'click'
       })
-      document.body.style.backgroundColor = "#FF0000"
+      document.body.style.backgroundColor = "#FF0000"  
     }
   }
 
@@ -39,6 +37,7 @@ class MessageForm extends Component {
       <form
         className={`MessageForm ${css(styles.form)}`}
         onSubmit={this.handleSubmit}
+        id="form"
       >
         <div className={css(styles.icon)}>
           <i className="fas fa-comment-alt"></i>
@@ -59,7 +58,7 @@ class MessageForm extends Component {
           onChange={this.handleImg}
         /> */}
 
-        <div className="boxClickCss" 
+        <div
           style={{backgroundColor: this.state.bgColor}}
           onClick={this.boxClick}>Change Color!</div>
 
@@ -118,6 +117,18 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: '0.5rem',
     border: '1px solid white',
   },
+
+  formBoxCSS: {
+    backgroundColor: 'rgba(250,2,250, 0.85)',
+    height: '3rem',
+    display: 'flex',
+    alignItems: 'stretch',
+    border: '2px solid #999',
+    borderRadius: '0.5rem',
+    margin: '0.25rem',
+    padding: 0,
+  },
+
 })
 
 export default MessageForm
