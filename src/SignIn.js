@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
   },
   image: {
-    padding: "1rem",
+    //padding: "0.5rem",
     display: 'flex',
   },
   title: {
