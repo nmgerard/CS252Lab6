@@ -4,6 +4,8 @@ import { StyleSheet, css } from 'aphrodite'
 class MessageForm extends Component {
   state = {
     body: '',
+    bgColor: '',
+    count: ''
   }
 
   handleSubmit = (ev) => {
@@ -14,6 +16,22 @@ class MessageForm extends Component {
 
   handleChange = (ev) => {
     this.setState({ body: ev.target.value })
+  }
+
+  boxClick = (e) => {
+    if (this.state.count === 'click') {
+      this.setState({
+        //bgColor: "#FF0000",
+        count: 'noclick'
+      })  
+      document.body.style.backgroundColor = "#FF0"
+    } else {
+      this.setState({
+        //bgColor: "#7FF000",
+        count: 'click'
+      })
+      document.body.style.backgroundColor = "#FF0000"
+    }
   }
 
   render() {
@@ -35,11 +53,16 @@ class MessageForm extends Component {
           autoFocus
           className={css(styles.input)}
         />
-        <input
+        {/* <input
           type="file"
           accept="image/*"
           onChange={this.handleImg}
-        />
+        /> */}
+
+        <div className="boxClickCss" 
+          style={{backgroundColor: this.state.bgColor}}
+          onClick={this.boxClick}>Change Color!</div>
+
         <button type="submit" className={css(styles.button)}>
           <i className="far fa-paper-plane" title="Send"></i>
         </button>
