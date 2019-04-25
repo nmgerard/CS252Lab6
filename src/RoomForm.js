@@ -158,10 +158,13 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: 'white',
+    color: 'whitemoke',
+    backgroundColor: "transparent",
     fontWeight: 400,
     lineHeight: '80px',
     fontSize: '2rem',
+    marginBottom: '2rem',
+    marginTop: '1rem',
   },
 
   main: {
@@ -176,26 +179,30 @@ const styles = StyleSheet.create({
   },
 
   form: {
-    backgroundColor: 'Gainsboro',
+    //backgroundColor: 'Gainsboro',
+    backgroundColor: 'rgba(0,0,0, 0.6)',
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     marginBottom: '2rem',
     padding: '0 2rem 2rem',
+    color: "whitesmoke",
   },
 
   label: {
     display: 'block',
     textTransform: 'uppercase',
-    color: '#999',
+    color: 'whitesmoke',
   },
 
   input: {
+    width: '20rem',
     fontSize: '1.5rem',
     border: 0,
     borderBottom: '1px solid black',
     margin: '1rem auto',
     textAlign: 'center',
     padding: '0.5rem',
-
+    backgroundColor: "transparent",
+    color: "whitesmoke",
     ':focus': {
       outline: 0,
     },
@@ -220,16 +227,30 @@ const styles = StyleSheet.create({
     margin: '0 1rem',
     fontSize: '1.2rem',
     borderRadius: '1rem',
-    backgroundColor: 'CornflowerBlue',
-    color: 'white',
+    //backgroundColor: 'CornflowerBlue',
+    backgroundColor: 'rgb(49, 109, 63, 0.7)',
+    color: 'whitesmoke',
     width: '10rem',
     cursor: 'pointer',
     outline: 0,
+    transition: 'color 0.25s ease-out',
+    ':hover': {
+      backgroundColor: 'rgb(49,109,63)',
+    }
   },
 
   cancel: {
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
+    backgroundColor: 'rgb(250, 250, 250, 0.6)',
     color: '#666',
+
+    cursor: 'pointer',
+    transition: 'color 0.25s ease-out',
+
+    ':hover': {
+      backgroundColor: 'rgb(150,31,31)',
+      color: "whitesmoke",
+    }
   },
 })
 

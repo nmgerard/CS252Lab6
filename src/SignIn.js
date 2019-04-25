@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
   },
   image: {
-    padding: "1rem",
+    //padding: "0.5rem",
     display: 'flex',
   },
   title: {
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     // }
     ':hover': {
       cursor: 'pointer',
-      backgroundColor: "DimGray",
+      backgroundColor: "#6e5494",
     },
   },
   fbButton: {

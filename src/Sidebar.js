@@ -46,6 +46,7 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
                     addRoom = {addRoom}
                 />
             </nav>
+            <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt="" width="75" height="70" style={styles.image}></img>
         </aside>
 
     )
@@ -53,8 +54,6 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
 
 const styles = {
     sidebar: {
-        //backgroundColor: "#4c3465",
-        //backgroundImage: `url('https://images.unsplash.com/photo-1517504734587-2890819debab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80')`,
         backgroundImage: 'url(https://images.unsplash.com/photo-1501619757722-90657a99803b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
@@ -65,6 +64,14 @@ const styles = {
         padding: "1rem 0",
         display: "flex",
         flexDirection: "column"
+    },
+    image: {
+        position: "absolute",
+        bottom: "0",
+        marginLeft: "auto",
+        marginRight: "auto",
+        left: "3.35rem",
+        padding: "0.5rem 0",
     },
     children: {
         padding: "0 1rem",
