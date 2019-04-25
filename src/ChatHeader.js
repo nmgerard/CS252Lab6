@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChatHeader = ( { room, removeRoom } ) => {
+const ChatHeader = ( { room, removeRoom } ) => {    
     return (
         <div className="ChatHeader" style = {styles.chatHeader}>
             <div className="roomInfo">
@@ -20,8 +20,7 @@ const ChatHeader = ( { room, removeRoom } ) => {
 const styles = {
     chatHeader: {
         //backgroundColor: "#f3f3f3",
-        backgroundColor: 'rgba(39,47,68, 0.5)',
-        //backgroundColor: 'rgba(44,52,77, 0.5)',
+        backgroundColor: '#DCDCDC',
         borderBottom: "1px solid #ccc",
         padding: "0.25rem 1rem",
         display: "flex",
@@ -47,7 +46,16 @@ const styles = {
         cursor: 'pointer',
         fontSize: '1rem',
         color: 'rgba(0,0,0, 0.4)',
-      }
+    },
+    button2: {
+        border: 0,
+        outline: 0,
+        backgroundColor: 'transparent',
+        padding: 0,
+        cursor: 'pointer',
+        fontSize: '1rem',
+        color: '#FF0000',
+    }
 }
 
 export default ChatHeader

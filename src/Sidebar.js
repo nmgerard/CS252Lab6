@@ -21,6 +21,8 @@ const Sidebar = ({user, signOut, users, rooms, addRoom}) => {
                     <i className="fas fa-sign-out-alt"></i>
                 </a>    
             </div> */}
+
+
             <UserInfo user = {user} signOut={signOut}/>
             <h1 style={{
                 ...styles.children,
