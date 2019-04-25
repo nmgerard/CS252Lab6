@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     // }
     ':hover': {
       cursor: 'pointer',
-      backgroundColor: "DimGray",
+      backgroundColor: "#6e5494",
     },
   },
   fbButton: {
