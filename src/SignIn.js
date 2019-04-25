@@ -43,7 +43,7 @@ class SignIn extends Component {
           <span className={css(styles.title)}>
            {/* <i className="fas fa-hashtag"></i>*/}
            {/*} WeTalk*/}
-           <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt=""></img>
+           <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt="" width="60" height="60" className={css(styles.image)}></img>
           </span>
         </header>
         <main className={css(styles.main)}>
@@ -103,7 +103,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
-    // backgroundColor: '#f6f6f6',
     backgroundImage: `url('https://images.unsplash.com/photo-1501619757722-90657a99803b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
@@ -117,6 +116,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     boxShadow: '0 1px 1px rgba(0,0,0,.1)',
+  },
+  image: {
+    padding: "1rem",
+    display: 'flex',
   },
   title: {
     //color: 'white',
