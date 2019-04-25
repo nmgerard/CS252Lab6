@@ -43,7 +43,7 @@ class SignIn extends Component {
           <span className={css(styles.title)}>
            {/* <i className="fas fa-hashtag"></i>*/}
            {/*} WeTalk*/}
-           <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt="" width="60" height="60" className={css(styles.image)}></img>
+           <img src="https://www.freelogodesign.org/download/file?id=5144c9b3-f920-4f0f-9f4a-e4e5f6fa14db.png" alt="" width="60" height="55" className={css(styles.image)}></img>
           </span>
         </header>
         <main className={css(styles.main)}>
@@ -139,14 +139,6 @@ const styles = StyleSheet.create({
     paddingBottom: '3rem',
   },
   form: {
-    //old form
-    // width: '40rem',
-    // backgroundColor: '#CEE9FA',
-    // boxShadow: '0 1px 1px rgba(0,0,0,.1)',
-    //marginBottom: '2rem',
-    //  paddingBottom: '1rem'
-
-    //new form
     width: '40rem',
     height: '20rem',
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -196,19 +188,6 @@ const styles = StyleSheet.create({
     transition: 'color 0.25s ease-out',
   },
   googleButton: {
-    // display: 'block',
-    // margin: '0 auto',
-    // padding: '1rem 2rem',
-    // fontSize: '1.2rem',
-    // borderRadius: '1rem',
-    // backgroundColor: '#EA4335',
-    // color: 'white',
-    // width: '20rem',
-    // marginTop: '1rem',
-    // marginBottom: "1rem",
-    // ':hover': {
-    //   cursor: 'pointer'
-    // }
     ':hover': {
       cursor: 'pointer',
       backgroundColor: "#EA4335",
@@ -216,57 +195,18 @@ const styles = StyleSheet.create({
   },
 
   githubButton: {
-    // display: 'block',
-    // margin: '0 auto',
-    // padding: '1rem 2rem',
-    // fontSize: '1.2rem',
-    // borderRadius: '1rem',
-    // backgroundColor: 'black',
-    // color: 'white',
-    // width: '20rem',
-    // marginTop: '1rem',
-    // marginBottom: "1rem",
-    // ':hover': {
-    //   cursor: 'pointer'
-    // }
     ':hover': {
       cursor: 'pointer',
       backgroundColor: "#6e5494",
     },
   },
   fbButton: {
-    // display: 'block',
-    // margin: '0 auto',
-    // padding: '1rem 2rem',
-    // fontSize: '1.2rem',
-    // borderRadius: '1rem',
-    // backgroundColor: 'rgb(59, 89, 152)',
-    // color: 'white',
-    // width: '20rem',
-    // marginTop: '1rem',
-    // marginBottom: "1rem",
-    // ':hover': {
-    //   cursor: 'pointer'
-    // }
     ':hover': {
       cursor: 'pointer',
       backgroundColor: "rgb(59, 89, 152)",
     },
   },
   twitterButton: {
-    // display: 'block',
-    // margin: '0 auto',
-    // padding: '1rem 2rem',
-    // fontSize: '1.2rem',
-    // borderRadius: '1rem',
-    // backgroundColor: 'rgb(29, 161, 242)',
-    // color: 'white',
-    // width: '20rem',
-    // marginTop: '1rem',
-    // marginBottom: "1rem",
-    // ':hover': {
-    //   cursor: 'pointer'
-    // },
     ':hover': {
       cursor: 'pointer',
       backgroundColor: "rgb(29, 161, 242)",

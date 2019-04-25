@@ -59,9 +59,11 @@ class MessageForm extends Component {
           onChange={this.handleImg}
         /> */}
 
-        <div className="boxClickCss" 
+        <div className={css(styles.boxClick)} 
           style={{backgroundColor: this.state.bgColor}}
-          onClick={this.boxClick}>Change Color!</div>
+          onClick={this.boxClick}>
+          Change Color!
+        </div>
 
         <button type="submit" className={css(styles.button)}>
           <i className="far fa-paper-plane" title="Send"></i>
@@ -107,7 +109,16 @@ const styles = StyleSheet.create({
       outline: 0,
     },
   },
-
+  boxClick: {
+    fontSize: '1.5rem',
+    backgroundColor: '#b3b3b3',
+    color: 'white',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    borderTopRightRadius: '0.5rem',
+    borderBottomRightRadius: '0.5rem',
+    border: '1px solid white',
+  },
   button: {
     fontSize: '1.5rem',
     backgroundColor: '#1A8FE3',
