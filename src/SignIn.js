@@ -137,13 +137,13 @@ const styles = StyleSheet.create({
   },
   form: {
     //old form
-   // width: '40rem',
+    // width: '40rem',
     // backgroundColor: '#CEE9FA',
     // boxShadow: '0 1px 1px rgba(0,0,0,.1)',
     //marginBottom: '2rem',
-  //  paddingBottom: '1rem'
+    //  paddingBottom: '1rem'
 
-  //new form
+    //new form
     width: '40rem',
     height: '20rem',
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     // }
     ':hover': {
       cursor: 'pointer',
-      backgroundColor: "rgb(0, 0, 0)",
+      backgroundColor: "DimGray",
     },
   },
   fbButton: {
